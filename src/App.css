@@ -1,35 +1,46 @@
+/* Estilos para el contenedor principal de la aplicación */
 .App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  display: flex; /* Establecer el contenedor principal como un flex container */
+  flex-direction: column; /* Organizar los elementos hijos en columnas */
+  align-items: center; /* Centrar los elementos hijos horizontalmente */
+  min-height: 100vh; /* Establecer la altura mínima del contenedor para ocupar toda la altura de la ventana */
+  background-color: var(--bg-color); /* Utilizar la variable de color de fondo */
+  color: var(--text-color); /* Utilizar la variable de color de texto */
 }
 
+/* Estilos para el contenido de las páginas */
 .page-content {
-  padding: 20px;
+  padding: 20px; /* Agregar relleno al contenido de las páginas */
 }
 
+/* Estilos para el botón de alternar tema */
 .toggle-btn {
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.25s, border-color 0.25s;
-  margin-top: 10px;
+  border-radius: 8px; /* Establecer un borde redondeado */
+  border: 1px solid #ccc; /* Establecer un borde sólido */
+  padding: 0.6em 1.2em; /* Agregar relleno */
+  font-size: 1em; /* Tamaño de fuente */
+  font-weight: 500; /* Peso de la fuente */
+  font-family: inherit; /* Utilizar la fuente del padre */
+  background-color: #1a1a1a; /* Color de fondo */
+  color: white; /* Color del texto */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  transition: background-color 0.25s, border-color 0.25s; /* Transición suave para el cambio de color */
+  margin-top: 10px; /* Espacio superior */
 }
 
+/* Estilos cuando el cursor está sobre el botón */
 .toggle-btn:hover {
-  background-color: #646cff;
+  background-color: #646cff; /* Cambiar el color de fondo al pasar el cursor sobre el botón */
 }
 
+/* Estilos cuando el botón está enfocado */
 .toggle-btn:focus,
 .toggle-btn:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+  outline: 4px auto -webkit-focus-ring-color; /* Establecer un contorno visible al enfocar el botón */
+}
+
+/* Estilos para el tema oscuro */
+body.dark {
+  --bg-color: #242424; /* Color de fondo oscuro */
+  --text-color: #ccc; /* Color de texto claro */
 }
